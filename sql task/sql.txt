@@ -1,0 +1,42 @@
+1.What are scalar functions and write a query?
+
+Scalar functions are the built-in functions in SQL, and whatever be the input provided to the 
+scalar functions, the output returned by these functions will always be a single value.
+UCASE()-SELECT UCASE ("Welcome to Javatpoint") AS UpperCase_String;  
+LCASE()-SELECT LCASE ("WELCOME TO JAVATPOINT") AS LowerCase_String;
+MID()-SELECT MID ("Welcome to the world of databases", 16, 18) AS Substring;  
+LENGTH()-SELECT ID, LENGTH (Name) AS LengthOfName, Age, Address, Salary FROM customers;
+ROUND()-SELECT ROUND (18000.44444, 2) AS RoundedValue;  
+NOW()- SELECT NOW () AS CurrentDatenTime;  
+FORMAT()-SELECT FORMAT (6789.6789, 2) AS Formatted_Number; 
+
+2.Explains joins with example and output?
+
+The SQL JOIN joins two tables based on a common column, and selects records that have matching values in these columns.
+
+INNER JOIN (Same as JOIN)
+The SQL INNER JOIN joins two tables based on a common column, and selects records that have matching values in these columns.
+
+LEFT JOIN
+The SQL LEFT JOIN joins two tables based on a common column, and selects records that have matching values in these columns and remaining rows from the left table.
+
+RIGHT JOIN
+The SQL RIGHT JOIN joins two tables based on a common column, and selects records that have matching values in these columns and remaining rows from the right table.
+
+FULL OUTER JOIN
+The SQL FULL OUTER JOIN joins two tables based on a common column, and selects records that have matching values in these columns and remaining rows from both of the tables.
+
+
+5.how do we use the Distinct statement?what are its use?
+
+SQL DISTINCT clause is used to remove the duplicates columns from the result set.
+SELECT DISTINCT expressions  
+FROM tables  
+[WHERE conditions];  
+
+uses
+
+The SELECT DISTINCT statement is used to return only distinct (different) values. 
+Inside a table, a column often contains many duplicate values; 
+and sometimes you only want to list the different (distinct) values.
+
